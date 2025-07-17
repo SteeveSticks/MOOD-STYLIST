@@ -1,5 +1,11 @@
+import MoodInput from "@/components/MoodInput";
+
 const Home = () => {
-  return <div className="">This is where the content lies</div>;
+  return (
+    <div className="">
+      <MoodInput />
+    </div>
+  );
 };
 
 export default Home;

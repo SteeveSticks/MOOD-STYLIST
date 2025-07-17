@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMono.variable} antialiased min-h-screen w-full bg-white relative text-gray-800 font-mono`}
+        className={`${geistMono.variable} antialiased min-h-screen w-full relative text-gray-800 font-mono`}
       >
         {/* Circuit Board - Light Pattern */}
         <div
