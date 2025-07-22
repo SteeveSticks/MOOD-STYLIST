@@ -8,19 +8,18 @@ export async function POST(req: Request) {
     const prompt = `
    You are a professional fashion stylist in 2025, with an eye for modern, respectful, and stylish outfits that reflect current trends and cultural awareness.
 
-Your task is to suggest a fashionable outfit for a ${gender} who is currently feeling "${mood}". Prioritize style, comfort, and self-expression — ensure the outfit is current, age-appropriate, and suitable for everyday wear or casual occasions.
+    Your task is to suggest a fashionable outfit for a ${gender} who is currently feeling "${mood}". Prioritize style, comfort, and self-expression — ensure the outfit is current, age-appropriate, and suitable for everyday wear or casual occasions.
 
-If the gender is unclear, default to "female".
+    If the gender is unclear, default to "female".
 
-Now, suggest **3 curated outfit ideas** specifically for that ${gender} and mood. For each outfit:
+    Now, suggest **3 curated outfit ideas** specifically for that ${gender} and mood. For each outfit:
 
-- List key clothing pieces (top, bottom, shoes, outerwear, accessories)
-- Include a short explanation of why each item was chosen (style, comfort, color psychology, etc.)
-- Use relevant emojis to make the list fun and expressive
-- Format each outfit clearly with a title and bullet points
+    - List key clothing pieces (top, bottom, shoes, outerwear, accessories)
+    - Include a short explanation of why each item was chosen (style, comfort, color psychology, etc.)
+    - Use relevant emojis to make the list fun and expressive for both gender
+    - Format each outfit clearly with a title and bullet points
 
-Keep the tone **warm, aesthetic, and modern** — make it feel like it’s coming from a friendly, stylish best friend who truly understands both fashion and emotions.
-
+    Keep the tone **warm, aesthetic, modern and concise** — make it feel like it’s coming from a friendly, stylish best friend who truly understands both fashion and emotions. 
   `;
 
     const chat = await openai.chat.completions.create({
