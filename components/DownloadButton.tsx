@@ -28,15 +28,7 @@ const DownloadButton = ({ image }: { image: string }) => {
     }
   };
 
-  return (
-    <a
-      onClick={handleDownload}
-      href="#"
-      className="absolute top-2 right-2 md:opacity-0 md:group-hover:opacity-100  transition-opacity bg-white/80 hover:bg-white text-black p-2 md:p-4 text-sm rounded-full shadow"
-    >
-      <Download className="size-5" />
-    </a>
-  );
+  return <div> </div>;
 };
 
 export default DownloadButton;
