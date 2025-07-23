@@ -1,4 +1,5 @@
 "use client";
+
 import { FormEvent, useEffect, useState, useTransition } from "react";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
@@ -7,9 +8,9 @@ import { toast } from "sonner";
 import SkeletonCard from "./SkeletonCard";
 import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
 import Image from "next/image";
-import Markdwon from "react-markdown";
 import { Label } from "./ui/label";
 import { Download } from "lucide-react";
+import { notFound } from "next/navigation";
 
 // Add helper to read from localStorage on init
 const getFromLocalStorage = (key: string) => {
@@ -57,6 +58,10 @@ const MoodInput = () => {
           throw new Error(errorData?.error || "Failed to fetch outfit");
         }
 
+        if (res.status === 404) {
+          notFound();
+        }
+
         setLoadingStep("🧠 Thinking about your mood...");
         await new Promise((r) => setTimeout(r, 1000));
 
@@ -83,6 +88,9 @@ const MoodInput = () => {
 
   return (
     <div>
+      {/* <h1 className="flex items-center justify-end pr-10 mb-4">
+        Select your gender
+      </h1> */}
       <RadioGroup
         value={gender}
         onValueChange={setGender}
