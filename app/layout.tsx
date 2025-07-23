@@ -3,6 +3,7 @@ import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -133,6 +134,7 @@ export default function RootLayout({
             <Header />
           </div>
           {children}
+          <SpeedInsights />
           <Toaster />
         </div>
       </body>
