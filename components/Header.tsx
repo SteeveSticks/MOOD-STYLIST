@@ -7,10 +7,11 @@ const Header = () => {
       <div className="flex items-center justify-start flex-wrap">
         <Image
           src="/img/AIMoodLogo.jpg"
-          alt="App logo"
+          alt="Halamd AI Mood Stylist logo"
           width={90}
           height={90}
           className="h-[60px] w-[60px] sm:h-[90px] sm:w-[90px] object-contain"
+          aria-label="App logo"
         />
 
         <h1 className="text-xl sm:text-4xl font-bold tracking-tight">

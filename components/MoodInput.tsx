@@ -104,10 +104,11 @@ const MoodInput = () => {
           >
             <Image
               src="/img/man-avatar.jpg"
-              alt="Male"
+              alt="Male avatar for outfit selection"
               width={100}
               height={100}
               className="rounded-lg"
+              aria-label="Male avatar"
             />
           </Label>
           <span className="text-sm">Male</span>
@@ -121,10 +122,11 @@ const MoodInput = () => {
           >
             <Image
               src="/img/female-avatar.jpg"
-              alt="Female"
+              alt="Female avatar for outfit selection"
               width={100}
               height={100}
               className="rounded-lg"
+              aria-label="Female avatar"
             />
           </Label>
           <span className="text-sm">Female</span>
@@ -143,6 +145,7 @@ const MoodInput = () => {
         <form
           onSubmit={handleSubmit}
           className="flex flex-col sm:flex-row w-full max-w-4xl items-center justify-center gap-3 mt-10"
+          aria-label="Mood input form"
         >
           <Textarea
             value={mood}
@@ -213,8 +216,13 @@ const MoodInput = () => {
                 <div className="relative w-full mt-4 group">
                   <img
                     src={image}
-                    alt="AI outfit"
+                    alt={
+                      outfit
+                        ? `AI generated outfit for mood: ${mood}`
+                        : "AI outfit"
+                    }
                     className="w-full rounded-lg"
+                    aria-label="AI generated outfit image"
                   />
                   <a
                     download

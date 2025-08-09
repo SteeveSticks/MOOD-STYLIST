@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Head from "next/head";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -113,6 +114,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Discover the perfect outfit for your mood with our AI-powered fashion app. Get personalized clothing suggestions based on your gender and emotions. Stylish, modern, and tailored just for you — fashion meets AI!"
+        />
+        <meta
+          name="keywords"
+          content="AI outfit generator, mood-based outfit suggestions, AI fashion stylist, personalized outfit ideas, outfit recommender app, AI clothing recommendations, virtual fashion assistant, dress for your mood app, mood fashion AI, AI wardrobe planner, Adebanjo Stephen"
+        />
+        <meta property="og:title" content="Halamd | AI Mood Stylist" />
+        <meta
+          property="og:description"
+          content="Discover the perfect outfit for your mood with our AI-powered fashion app. Get personalized clothing suggestions based on your gender and emotions. Stylish, modern, and tailored just for you — fashion meets AI!"
+        />
+        <meta property="og:image" content="/img/AIMoodLogo.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://halamdcom.vercel.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Halamd | AI Mood Stylist" />
+        <meta
+          name="twitter:description"
+          content="Discover the perfect outfit for your mood with our AI-powered fashion app. Get personalized clothing suggestions based on your gender and emotions. Stylish, modern, and tailored just for you — fashion meets AI!"
+        />
+        <meta name="twitter:image" content="/img/AIMoodLogo.jpg" />
+      </Head>
       <body
         className={`${geistMono.variable} antialiased min-h-screen w-full relative text-gray-800 font-mono`}
       >
