@@ -94,7 +94,7 @@ const MoodInput = () => {
       <RadioGroup
         value={gender}
         onValueChange={setGender}
-        className="flex items-center justify-end gap-6 pr-4 md:pt-0 pt-10"
+        className="flex items-center justify-end gap-6 pr-4 md:pt-0 pt-10 max-md:hidden"
       >
         <div className="flex flex-col items-center gap-2">
           <RadioGroupItem value="male" id="male" className="" />
