@@ -239,6 +239,8 @@ const MoodInput = () => {
           </Card>
         ) : null}
       </div>
+
+      {/* New Features */}
     </div>
   );
 };
