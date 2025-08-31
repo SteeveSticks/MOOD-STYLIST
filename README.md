@@ -3,6 +3,8 @@
 AI Mood Stylist is an AI-powered outfit recommendation app that suggests clothing styles based on the user’s **mood**.  
 By combining **OpenAI** and **DALL·E 3** with a sleek **Next.js + Tailwind CSS** frontend, the app transforms moods into personalized fashion inspiration.
 
+https://github.com/user-attachments/assets/8ad0fa5a-1f74-470c-a807-7bc92c6a093f
+
 ---
 
 ## ✨ Features
@@ -63,19 +65,19 @@ npm run dev
 
 ---
 
-## Hightlights Reel
+## Highlights Reel
 
-... AI-powered outfit styling based on moods
-... Real-time DALL·E 3 image generation
-... Clean responsive UI with smooth animations
-... Bringing fashion + AI together in on unqiue app
+- AI-powered outfit styling based on moods
+- Real-time DALL·E 3 image generation
+- Clean responsive UI with smooth animations
+- Bringing fashion + AI together in one unique app
 
 ![App Demo]
 
 ## Future Improvements
 
 - Save and Share Favorite Outfits
-- Link AI recommendations to e-commece stores
+- Link AI recommendations to e-commerce stores
 - Multi-language mood detection
 
 Built with ❤️ by [Stephen Adebanjo](https://github.com/SteeveSticks)
