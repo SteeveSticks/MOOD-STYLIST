@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👗 AI Mood Stylist
 
-## Getting Started
+AI Mood Stylist is an AI-powered outfit recommendation app that suggests clothing styles based on the user’s **mood**.  
+By combining **OpenAI** and **DALL·E 3** with a sleek **Next.js + Tailwind CSS** frontend, the app transforms moods into personalized fashion inspiration.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 🧠 **AI Mood Detection** – Input your current mood, and get style suggestions tailored to your vibe.
+- 🎨 **AI-Generated Outfits** – Uses **OpenAI + DALL·E 3** to generate visual outfit recommendations.
+- ⚡ **Modern UI/UX** – Built with **Next.js 15** and **Tailwind CSS 4** for speed, responsiveness, and aesthetics.
+- 🔄 **Interactive Experience** – Every recommendation feels unique and personalized.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 15, React 19, Tailwind CSS 4, shadcn/ui
+- **AI/ML:** OpenAI API, DALL·E 3
+- **Styling & UI:** Tailwind CSS, Framer Motion (for smooth animations)
+
+---
+
+## 🧩 Problem & Solution
+
+**Problem:**  
+People often struggle with deciding _“What should I wear today?”_, especially when their fashion choices don’t align with how they feel.
+
+**Solution:**  
+We built an AI-powered stylist that connects emotions with fashion. By translating mood into outfits, we help users feel confident and stylish, no matter the day.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/ai-mood-stylist.git
+cd ai-mood-stylist
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env.local` file in the root directory and add your OpenAI API key:
+
+```bash
+OPENAI_API_KEY=your-openai-api-key
+```
+
+### 4. Run the App
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Hightlights Reel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+... AI-powered outfit styling based on moods
+... Real-time DALL·E 3 image generation
+... Clean responsive UI with smooth animations
+... Bringing fashion + AI together in on unqiue app
 
-## Learn More
+![App Demo]
 
-To learn more about Next.js, take a look at the following resources:
+## Future Improvements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Save and Share Favorite Outfits
+- Link AI recommendations to e-commece stores
+- Multi-language mood detection
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ by [Stephen Adebanjo](https://github.com/SteeveSticks)
